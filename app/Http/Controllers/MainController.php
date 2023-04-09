@@ -36,6 +36,11 @@ class MainController extends Controller
         return view('web-site.layout.about');
     }
 
+    public function myAccountPage()
+    { 
+        return view('web-site.layout.myaccount');
+    }
+    
     //admin
 
     public function adminDashbord()

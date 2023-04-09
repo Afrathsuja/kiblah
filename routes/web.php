@@ -21,6 +21,7 @@ Route::get('/account', [\App\Http\Controllers\MainController::class, 'authPage']
 Route::get('/category', [\App\Http\Controllers\MainController::class, 'categoryPage'])->name('categoryPage');
 Route::get('/contact', [\App\Http\Controllers\MainController::class, 'contactPage'])->name('contactPage');
 Route::get('/about', [\App\Http\Controllers\MainController::class, 'aboutPage'])->name('aboutPage');
+Route::get('/my-account', [\App\Http\Controllers\MainController::class, 'myAccountPage'])->name('myAccountPage');
 
 
 Route::get('/admin/dashboard', [\App\Http\Controllers\MainController::class, 'adminDashbord'])->name('adminDashbord');

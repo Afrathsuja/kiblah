@@ -3934,3 +3934,8 @@ select.top-drop-menu {
       margin-bottom: 0px;
     }
      
+     
+.panel{
+  background:lightgrey;
+  padding:50px;
+}
