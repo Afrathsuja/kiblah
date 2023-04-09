@@ -23,28 +23,37 @@
                         <div class="tab-content">
                             <!-- LOGIN -->
                             <div role="tabpanel" class="tab-pane active" id="home">
-                                <h3>My Posts</h3>
-                                <div class="panel">
-                                    <form>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail2">Email Address:</label>
-                                            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="exampleInputEmail2">Password:</label>
-                                            <input type="password" class="form-control" id="password" placeholder="********">
-                                        </div>
-
-                                        <div>
-                                            <a href="" class="pull-left">Forgot your password?</a>
-                                            <a href="" class="pull-right">Create an account</a>
-                                        </div>
-                                        <div class="clearfix"></div>
-
-                                        <div class="pull-right">
-                                            <a class="btn">Sign in</a>
-                                        </div>
-                                    </form>
+                                <h3 id="post">My Posts</h3>
+                                <!-- One "tab" for each step in the form: -->
+                                <div class="tab">
+                                  <p><input placeholder="Enter your category" oninput="this.className = ''"></p>
+                                </div>
+                                
+                                <div class="tab">
+                                  <p><input placeholder="Select sub category" oninput="this.className = ''"></p>
+                                </div>
+                                
+                                <div class="tab">
+                                  <p><input placeholder="Enter the City or Division " oninput="this.className = ''"></p>
+                                </div>
+                                
+                                <div class="tab">
+                                  <p><input placeholder="Enter Popular areas" oninput="this.className = ''"></p>
+                                </div>
+                                
+                                <div style="overflow:auto;">
+                                  <div style="float:right;">
+                                    <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                                    <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+                                  </div>
+                                </div>
+                                
+                                <!-- Circles which indicates the steps of the form: -->
+                                <div style="text-align:center;margin-top:40px;">
+                                  <span class="step"></span>
+                                  <span class="step"></span>
+                                  <span class="step"></span>
+                                  <span class="step"></span>
                                 </div>
                             </div>
 
